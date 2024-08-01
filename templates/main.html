@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/icons/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black" style="font-family: 'Poppins', sans-serif;;">
+    <div class="flex items-center">
+        <div class="hidden h-full md:block" style="background-color: #D9FC05; flex: 2;">
+            <div class="h-full flex justify-center">
+                <img src="/static/images/side-image.png" class="h-lvh" alt="">
+            </div>  
+        </div>
+        <div class="text-white" style="flex: 3;">
+            <h1 class="text-4xl m-4 ml-8 mb-2 font-bold">Registration Form</h1>
+            <p class="text-sm m-4 ml-8 mb-6 text-stone-400">
+                Welcome to <span class="font-bold text-white">inhousetech</span>! Please fill out the form below to create your account. 
+                Ensure that you provide accurate information for a seamless registration process. 
+                If you have any questions, feel free to reach out to our support team.
+            </p>
+            <form action="/" method="post" class="p-4">
+                <div class="flex w-full">
+                    <div class="m-4 w-full">
+                        <label for="first-name">First Name</label><br>
+                        <div class="flex items-center bg-stone-700 rounded-md">
+                            <img src="/static/icons/user.png" alt="First Name Icon" class="h-6 w-6 ml-2">
+                            <input name="first-name" type="text" class="w-full bg-transparent outline-none h-10 p-2" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="m-4 w-full">
+                        <label for="last-name">Last Name</label><br>
+                        <div class="flex items-center bg-stone-700 rounded-md">
+                            <img src="/static/icons/user.png" alt="Last Name Icon" class="h-6 w-6 ml-2">
+                            <input name="last-name" type="text" class="w-full bg-transparent outline-none h-10 p-2" autocomplete="off" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m-4">
+                    <label for="contact-number">Contact Number</label><br>
+                    <div class="flex items-center bg-stone-700 rounded-md">
+                        <img src="/static/icons/call.png" alt="Contact Number Icon" class="h-6 w-6 ml-2">
+                        <input name="contact-number" type="text" class="w-full bg-transparent outline-none h-10 p-2" autocomplete="off" required>
+                    </div>
+                </div>
+
+                <div class="m-4 mt-8">
+                    <label for="email">Email</label><br>
+                    <div class="flex items-center bg-stone-700 rounded-md">
+                        <img src="/static/icons/email.png" alt="Email Icon" class="h-6 w-6 ml-2">
+                        <input name="email" type="email" class="w-full bg-transparent outline-none h-10 p-2" autocomplete="off" required>
+                    </div>
+                </div>
+
+                <div class="m-4 mt-8">
+                    <input type="submit" value="Register" class="w-full text-stone-700 rounded-lg p-2" style="background-color: #D9FC05;">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
